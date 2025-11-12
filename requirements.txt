@@ -1,0 +1,28 @@
+# requirements.txt for Advanced RAG Streamlit App
+# Core
+streamlit>=1.40.0
+requests>=2.32.0
+beautifulsoup4>=4.12.3
+urllib3>=2.2.2
+
+# PDF and OCR
+PyMuPDF>=1.24.10
+pillow>=10.3.0
+pytesseract>=0.3.13  # optional (for OCR on embedded images)
+
+# Vector Store
+chromadb>=0.5.17
+
+# Utilities
+numpy>=1.26.4
+
+# Optional for better text splitting / embedding management
+langchain-text-splitters>=0.2.3
+
+# For web crawling & data parsing (optional)
+duckduckgo-search>=5.3.0
+
+# Comments:
+# - Requires Python 3.9+
+# - Ensure you have Tesseract installed in your system path if you enable OCR.
+# - Run with: streamlit run advanced_rag_streamlit.py
